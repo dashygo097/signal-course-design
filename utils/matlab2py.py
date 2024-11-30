@@ -1,9 +1,11 @@
 import os
 import scipy
+import numpy as np
+from typing import Dict
 from tqdm.auto import tqdm
 
 
-def read_mat_folder(folder_path):
+def read_mat_folder(folder_path: str):
     # read all .mat files in folder
 
     demo_path = os.getcwd()
@@ -19,7 +21,7 @@ def read_mat_folder(folder_path):
     return files
 
 
-def write_array(array, name, folder_path):
+def write_array(array: np.ndarray, name: str, folder_path: str):
     # write an array into {name} in folder
     demo_path = os.getcwd()
     os.chdir(folder_path)
@@ -33,7 +35,7 @@ def write_array(array, name, folder_path):
     print("Done!")
 
 
-def get_array(file):
+def get_array(file: Dict):
     # turn loaded .mat file's 1D data array into an numpy array
     if isinstance(file, tuple):
         key = list(file[-1].keys())[-1]
