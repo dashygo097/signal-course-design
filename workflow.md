@@ -33,7 +33,7 @@ stateDiagram
 
     state Par4{
        Coding
-       Synthesis
+       Integration
     }
     Par4 --> Par3
     Par4 --> Extensions456 : offer help
