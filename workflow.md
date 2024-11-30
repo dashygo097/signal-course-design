@@ -6,18 +6,18 @@
 stateDiagram
     state Par1{
         [*] --> FFTs : Basic
-        [*] --> WT : Extention
-        FFTs --> Mag : Extention
+        [*] --> WT : Extension
+        FFTs --> Mag : Extension
         InitCommit!
         Analysis
     }
 
     Par1 --> Filter : For Par2
-    Par1 --> Extentions456 : offer help
+    Par1 --> Extensions456 : offer help
 
     state Par2{
         Filter --> ... : You can design many filters e.g. IIR FIR or anything else
-        [*] --> Extentions456 : Commit
+        [*] --> Extensions456 : Commit
         Design
     }
 
@@ -27,7 +27,7 @@ stateDiagram
         Docs
     }
 
-    Par3 --> Extentions456 : offer help
+    Par3 --> Extensions456 : offer help
     Par2 --> Par4
     Par1 --> Par4
 
@@ -36,7 +36,7 @@ stateDiagram
        Synthesis
     }
     Par4 --> Par3
-    Par4 --> Extentions456 : offer help
+    Par4 --> Extensions456 : offer help
 
 ```
 
@@ -44,7 +44,7 @@ stateDiagram
 
 > Par1 for these algorithms
 
-> Par2 for these designs and should be responsible for the Extentions
+> Par2 for these designs and should be responsible for the Extensions
 
 > Par3(Flexible) for docs, Better with Latex or anything else you like
 >
