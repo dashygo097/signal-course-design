@@ -22,7 +22,7 @@ stateDiagram
     }
 
     state Par3{
-        Diagrams --> Report 
+        Diagrams --> Report
         Analysis --> Report
         Docs
     }
@@ -33,7 +33,7 @@ stateDiagram
 
     state Par4{
        Coding
-       Synthesis 
+       Synthesis
     }
     Par4 --> Par3
     Par4 --> Extentions456 : offer help
@@ -42,11 +42,12 @@ stateDiagram
 
 ### Tips
 
->Par1 for these algorithms
+> Par1 for these algorithms
 
->Par2 for these designs and should be responsible for the Extentions
+> Par2 for these designs and should be responsible for the Extentions
 
->Par3(Flexible) for docs, Better with Latex or anything else you like
->> For Par3: If you also want to do tasks above (Par1 Par2) You can participate in.Just discuss with Par4 to share your doc work to be done with Par4.
+> Par3(Flexible) for docs, Better with Latex or anything else you like
+>
+> > For Par3: If you also want to do tasks above (Par1 Par2) You can participate in.Just discuss with Par4 to share your doc work to be done with Par4.
 
->Par4 refers to all these works and do coding for the implements for algorithms and designs
+> Par4 refers to all these works and do coding for the implements for algorithms and designs
