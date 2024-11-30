@@ -1,2 +1,2 @@
 # signal-course-design
-This repository is for the course design of *Signal and System*.
+This repository is for the course design src code of *Signal and System*.
