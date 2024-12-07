@@ -1,12 +1,12 @@
 import os
 import scipy
 import numpy as np
-from typing import Dict
-from tqdm import tqdm
+from typing import Dict, Tuple, List
+from tqdm.auto import tqdm
 
 
-def read_mat_folder(folder_path: str):
-    # read all .mat files in folder
+def read_mat_folder(folder_path: str) -> List:
+    "read all .mat files in folder"
 
     demo_path = os.getcwd()
     os.chdir(folder_path)
@@ -21,9 +21,8 @@ def read_mat_folder(folder_path: str):
     return files
 
 
-def write_array(array: np.ndarray, name: str, folder_path: str):
-    # write an array into {name} in folder
-
+def write_array(array: np.ndarray, name: str, folder_path: str) -> None:
+    "write an array into {name} in folder"
     demo_path = os.getcwd()
     os.chdir(folder_path)
     print(f"Write data into {folder_path} as {name}...")
@@ -36,9 +35,8 @@ def write_array(array: np.ndarray, name: str, folder_path: str):
     print("Done!")
 
 
-def get_array(file: Dict):
-    # turn loaded .mat file's 1D data array into an numpy array
-
+def get_array(file: Dict) -> np.ndarray:
+    "turn loaded .mat file's 1D data array into an numpy array"
     if isinstance(file, tuple):
         key = list(file[-1].keys())[-1]
         print(f"Loaded file: {file[0]}")
