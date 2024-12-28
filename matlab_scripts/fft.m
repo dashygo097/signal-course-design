@@ -1,6 +1,6 @@
 for i = 1:9
     % 构建文件路径
-    filename = fullfile('$DATA_FOLDER', sprintf('%d.mat', i));
+    filename = fullfile('../data/original_data', sprintf('%d.mat', i));
     
     % 加载 .mat 文件
     data = load(filename);
@@ -41,8 +41,8 @@ xlabel("Hz")
 ylabel("power")
 
 % 将图像保存为文件
-saveas(gcf, '$FFT_MAG_PICTURES');
+saveas(gcf, '../diagrams/fft_mag_distributed');
 
 % 保存P1（dealt图中的数据）到.mat文件
 dealt_data = P1;  % 将P1数据保存为dealt_data
-save('$PROCESSED_DATA_PATH', '$PROCESSED_DATA');
+save('../data/fft_mag', '$PROCESSED_DATA');

@@ -1,7 +1,8 @@
 import os
-import scipy
+from typing import Dict, List
+
 import numpy as np
-from typing import Dict, Tuple, List
+import scipy
 from tqdm.auto import tqdm
 
 
