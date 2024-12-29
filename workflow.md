@@ -6,7 +6,7 @@
 stateDiagram
     state Par1{
         [*] --> FFTs : Basic
-        [*] --> WT : Extension
+        [*] --> STFT : Extension
         FFTs --> Mag : Extension
         InitCommit!
         Analysis
